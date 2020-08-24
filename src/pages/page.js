@@ -27,6 +27,12 @@ class Page extends React.Component {
                         <SubMenu key="array" title="Array">
                             <Menu.Item key="Chunk"><Link to={"/array/chunk"}>Chunk</Link></Menu.Item>
                         </SubMenu>
+                        <SubMenu key="collection" title="Collection">
+                            <Menu.Item key="toNumber"><Link to={"/collection/toNumber"}>toNumber</Link></Menu.Item>
+                        </SubMenu>
+                        <SubMenu key="lang" title="Lang">
+                            <Menu.Item key="Lang"><Link to={"/lang/isObject"}>isObject</Link></Menu.Item>
+                        </SubMenu>
                     </Menu>
                 </Sider>
                 <Layout className="site-layout">
