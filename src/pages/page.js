@@ -37,7 +37,7 @@ class Page extends React.Component {
                 </Sider>
                 <Layout className="site-layout">
                     <Header className="site-layout-background" style={{ padding: 0 }} />
-                    <Content style={{ margin: '0 16px' }}>
+                    <Content style={{ margin: '0 16px',background:'white' }}>
                         <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
                             <Route path="/" component={RouterCtx}>  </Route>
                         </div>
