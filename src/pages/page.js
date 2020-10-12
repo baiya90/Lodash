@@ -3,6 +3,7 @@ import './App.css';
 import { Layout, Menu, Breadcrumb, Button } from 'antd';
 import { Link,Route } from 'react-router-dom'
 import RouterCtx from "../router/router";
+import isSymbol from "./lang/isSymbol";
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
@@ -31,7 +32,8 @@ class Page extends React.Component {
                             <Menu.Item key="toNumber"><Link to={"/collection/toNumber"}>toNumber</Link></Menu.Item>
                         </SubMenu>
                         <SubMenu key="lang" title="Lang">
-                            <Menu.Item key="Lang"><Link to={"/lang/isObject"}>isObject</Link></Menu.Item>
+                            <Menu.Item key="isObject"><Link to={"/lang/isObject"}>isObject</Link></Menu.Item>
+                            <Menu.Item key="isSymbol"><Link to={"/lang/isSymbol"}>isSymbol</Link></Menu.Item>
                         </SubMenu>
                     </Menu>
                 </Sider>
